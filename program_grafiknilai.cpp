@@ -12,10 +12,9 @@ int main() {
            cout << "100   : " ;
            cin >> nilai_mhs[i];
        } else{
-               cout << i * 10 << "-" << i*10 +9 << " : ";
-                cin >> nilai_mhs[i];
-               
-           }
+           cout << i * 10 << "-" << i*10 +9 << " : ";
+           cin >> nilai_mhs[i];
+       }
       cout << endl;
     }
     cout << "MENAMPILKAN GRAFIK PERSEBARAN NILAI MAHASIWA S1 ILMU KOMPUTER 2022 MATA KULIAH DDP" << endl << endl;
@@ -40,8 +39,5 @@ int main() {
            		}   
     	}
         cout << endl;
-    }
-    
-
-    return 0;
+        return 0;
 }
