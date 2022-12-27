@@ -1,21 +1,16 @@
 #include <iostream>
-#include <array>
 #define n 11
 using namespace std;
 int main() {
-    int nilai_mhs[11];
-    
+    int nilai_mhs[n];
     for (int i = 0; i < n ; i++){
        cout << "Jumlah mahasiswa dengan nilai " ;
-       
        if(i == 0){
            cout << "0-9   : " ;
            cin >> nilai_mhs[i];
-           
        } else if(i == 10){
            cout << "100   : " ;
-            cin >> nilai_mhs[i];
-          
+           cin >> nilai_mhs[i];
        } else{
                cout << i * 10 << "-" << i*10 +9 << " : ";
                 cin >> nilai_mhs[i];
