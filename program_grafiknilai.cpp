@@ -28,7 +28,7 @@ int main() {
       cout << endl;
     }
         cout << "\t_____________________________________________________________________________________________________________\n";
-        cout << "\t\tMENAMPILKAN GRAFIK PERSEBARAN NILAI MAHASIWA S1 ILMU KOMPUTER 2022 MATA KULIAH DDP";
+        cout << "\t\tMENAMPILKAN GRAFIK PERSEBARAN NILAI MAHASIWA S1 ILMU KOMPUTER 2022 MATA KULIAH DDP\n";
         cout << "\t_____________________________________________________________________________________________________________\n\n";
 
     
