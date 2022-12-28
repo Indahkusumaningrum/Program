@@ -27,7 +27,10 @@ int main() {
        }
       cout << endl;
     }
-    cout << "MENAMPILKAN GRAFIK PERSEBARAN NILAI MAHASIWA S1 ILMU KOMPUTER 2022 MATA KULIAH DDP" << endl << endl;
+        cout << "\t_____________________________________________________________________________________________________________\n";
+        cout << "MENAMPILKAN GRAFIK PERSEBARAN NILAI MAHASIWA S1 ILMU KOMPUTER 2022 MATA KULIAH DDP" << endl << endl;
+        cout << "\t_____________________________________________________________________________________________________________\n\n";
+
     
     for(int i = 0; i < n ; i++){
         if(i == 0){
