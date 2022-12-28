@@ -34,19 +34,19 @@ int main() {
     
     for(int i = 0; i < n ; i++){
         if(i == 0){
-           	cout << "0-9   : " ;
+           	cout << "0-9   \t| " ;
            	for(int star = 1; star <= nilai_mhs[i] ; star++){
                cout << "*";
           	}
            
        } else if(i == 10){
-        	cout << "100   : " ;
+        	cout << "100   \t| " ;
            	for(int star = 1; star <= nilai_mhs[i] ; star++){
                cout << "*";
            	}
           
        } else{
-            	cout << i * 10 << "-" << i*10 +9 << " : ";
+            	cout << i * 10 << "-" << i*10 +9 << " \t| ";
     			for(int star = 1; star <= nilai_mhs[i] ; star++){
                		cout << "*";
            		}   
