@@ -3,6 +3,13 @@
 using namespace std;
 int main() {
     int nilai_mhs[n];
+    string matakuliah, jurusan;
+    char tahun[4];
+    cout << "NAMA MATA KULIAH\t: "; getline(cin, matakuliah);
+    cout << "NAMA JURUSAN\t\t: "; getline(cin, jurusan);
+    cout << "TAHUN\t\t\t: "; cin >> tahun; cout << endl << endl;
+    cout << "MASUKKAN DATA JUMLAH MAHASISWA BERDASARKAN INTERVAL NILAI BERIKUT\n";
+    
     for (int i = 0; i < n ; i++){
        cout << "Jumlah mahasiswa dengan nilai " ;
         
