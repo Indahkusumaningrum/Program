@@ -58,7 +58,7 @@ perhitungan:
 		setcolor (04);
 		cout << "\nHasil tidak dapat ditentukan karena operator tidak tersedia";
 		setcolor (7);
-		cout << "Tekan enter untuk kembali ke menu);
+		cout << "Tekan enter untuk kembali ke menu";
 		getch();
 		goto menu;
 	}
@@ -74,7 +74,7 @@ perhitungan:
 	
 	cout << "\n\nMasukkan pilihan : ";
 	cin >> pil_user;
-	}
+
 	
 	if (pil_user == '1'){
 		system ("CLS");
