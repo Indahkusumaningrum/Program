@@ -56,7 +56,7 @@ perhitungan:
 		break;
 	default :
 		setcolor (04);
-		cout << "\nHasil tidak dapat ditentukan karena operator tidak tersedia";
+		cout << "\nHasil tidak dapat ditentukan karena operator tidak tersedia\n";
 		setcolor (7);
 		cout << "Tekan enter untuk kembali ke menu";
 		getch();
