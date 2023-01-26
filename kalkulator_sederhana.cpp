@@ -18,7 +18,7 @@ void header(){
 }
 int main (){
 	header();	
-	perhitungan:
+	do{
 	cout << "Bilangan pertama\t : ";
 	cin >> bil1;
 	cout << "Operator Aritmatika\t : ";
@@ -70,6 +70,7 @@ int main (){
 	
 	cout << "\n\nMasukkan pilihan : ";
 	cin >> pil_user;
+	} while (pil_user == '1');
 	
 	if (pil_user == '1'){
 		system ("CLS");
