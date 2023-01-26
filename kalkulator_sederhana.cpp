@@ -18,7 +18,8 @@ void header(){
 }
 int main (){
 	header();	
-	do{
+
+perhitungan:
 	cout << "Bilangan pertama\t : ";
 	cin >> bil1;
 	cout << "Operator Aritmatika\t : ";
@@ -57,6 +58,9 @@ int main (){
 		setcolor (04);
 		cout << "\nHasil tidak dapat ditentukan karena operator tidak tersedia";
 		setcolor (7);
+		cout << "Tekan enter untuk kembali ke menu);
+		getch();
+		goto menu;
 	}
 	menu:
 	setcolor (03);
@@ -70,12 +74,15 @@ int main (){
 	
 	cout << "\n\nMasukkan pilihan : ";
 	cin >> pil_user;
-	} while (pil_user == '1');
+	}
 	
 	if (pil_user == '1'){
 		system ("CLS");
 		header();
-		goto perhitungan;
+		do{
+			goto perhitungan;
+			goto menu;
+		} while (pil_user == '1');
 		
 	}else if(pil_user == '2'){
 		
@@ -85,10 +92,10 @@ int main (){
 		bil1 = hasil;
 		bil2 = 0;
 		
-		cout << "HASIL TERAKHIR\t : " << hasil << endl;
-		cout << "Operator\t : ";
+		cout << "HASIL TERAKHIR\t\t : " << hasil << endl;
+		cout << "Operator\t\t : ";
 		cin >> operator_aritmatika;
-		cout << "Bilangan kedua\t :";
+		cout << "Bilangan kedua\t\t :";
 		cin >> bil2;
 		
 	setcolor (03);
@@ -123,7 +130,9 @@ int main (){
 		setcolor (7);
 	}
 		
-		
+		do{
+		goto menu;
+		} while (pil_user == '2');
 		
 	}else if(pil_user == '0'){
 		system ("CLS");
