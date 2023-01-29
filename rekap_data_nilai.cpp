@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
 	
-	float fisika[10], kimia[10], matematika[10], biologi[10];
+	float fisika[10], kimia[10], matematika[10], biologi[10], bahasa_inggris[10];
 	float total_fisika, total_kimia, total_matematika, total_biologi, total_bahasainggris;
 	string mapel[] = {"Fisika", "Kimia", "Matematika", "Biologi", "Bahasa_inggris"};
 	int banyak_mapel = sizeof(mapel)/sizeof(*mapel);
