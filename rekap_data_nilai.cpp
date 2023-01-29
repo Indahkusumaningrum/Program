@@ -8,7 +8,7 @@ int main(){
 	
 	float fisika[10], kimia[10], matematika[10], biologi[10], bahasa_inggris[10];
 	float total_fisika, total_kimia, total_matematika, total_biologi, total_bahasainggris;
-	string mapel[] = {"Fisika", "Kimia", "Matematika", "Biologi", "Bahasa_inggris"};
+	string mapel[] = {"Fisika", "Kimia", "Matematika", "Biologi", "Bahasa Inggris"};
 	int banyak_mapel = sizeof(mapel)/sizeof(*mapel);
 	float banyak_data, jumlah_data[10], rata_siswa[10], rata_mapel[10];
 	char nama[10][10];
@@ -51,17 +51,17 @@ int main(){
 	cout << endl;
 		
 	//output tabel 
-	cout << "----------------------------------------------------------------------------------------------\n";
+	cout << "------------------------------------------------------------------------------------------------\n";
 	cout << setw(5) << "No" << setw(10) << "Nama"
 		 <<	setw(15) << mapel[0] << setw(15) << mapel[1]
 		 <<	setw(15) << mapel[2] << setw(15) << mapel[3] << setw(20) << mapel[4] << endl;
-	cout << "----------------------------------------------------------------------------------------------\n";		
+	cout << "------------------------------------------------------------------------------------------------\n";		
 	
 	for(int i = 0; i < banyak_data; i++){
 	int no = i +1;
 	cout << setw(4) << no << setw(10) << nama[i]
 		 << setw(14) << fisika[i] << setw(15) << kimia[i]
-		 << setw(14) << matematika[i] << setw(16) << biologi[i] << setw(17) << bahasa_inggris[i] << endl;
+		 << setw(13) << matematika[i] << setw(16) << biologi[i] << setw(17) << bahasa_inggris[i] << endl;
 	
 	}	
 	//output Total Nilai
