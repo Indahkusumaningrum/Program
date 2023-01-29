@@ -61,7 +61,7 @@ int main(){
 	int no = i +1;
 	cout << setw(4) << no << setw(10) << nama[i]
 		 << setw(14) << fisika[i] << setw(15) << kimia[i]
-		 << setw(13) << matematika[i] << setw(16) << biologi[i] << setw(17) << bahasa_inggris[i] << endl;
+		 << setw(13) << matematika[i] << setw(16) << biologi[i] << setw(16) << bahasa_inggris[i] << endl;
 	
 	}	
 	//output Total Nilai
