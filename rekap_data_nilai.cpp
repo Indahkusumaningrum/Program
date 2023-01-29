@@ -51,17 +51,17 @@ int main(){
 	cout << endl;
 		
 	//output tabel 
-	cout << "---------------------------------------------------------------------------------\n";
+	cout << "----------------------------------------------------------------------------------------------\n";
 	cout << setw(5) << "No" << setw(10) << "Nama"
 		 <<	setw(15) << mapel[0] << setw(15) << mapel[1]
-		 <<	setw(15) << mapel[2] << setw(15) << mapel[3] << endl;
-	cout << "---------------------------------------------------------------------------------\n";		
+		 <<	setw(15) << mapel[2] << setw(15) << mapel[3] << setw(20) << mapel[4] << endl;
+	cout << "----------------------------------------------------------------------------------------------\n";		
 	
 	for(int i = 0; i < banyak_data; i++){
 	int no = i +1;
 	cout << setw(4) << no << setw(10) << nama[i]
 		 << setw(14) << fisika[i] << setw(15) << kimia[i]
-		 << setw(14) << matematika[i] << setw(16) << biologi[i] << endl;
+		 << setw(14) << matematika[i] << setw(16) << biologi[i] << setw(17) << bahasa_inggris[i] << endl;
 	
 	}	
 	//output Total Nilai
