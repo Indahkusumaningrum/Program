@@ -7,8 +7,8 @@ using namespace std;
 int main(){
 	
 	float fisika[10], kimia[10], matematika[10], biologi[10];
-	float total_fisika, total_kimia, total_matematika, total_biologi;
-	string mapel[] = {"Fisika", "Kimia", "Matematika", "Biologi"};
+	float total_fisika, total_kimia, total_matematika, total_biologi, total_bahasainggris;
+	string mapel[] = {"Fisika", "Kimia", "Matematika", "Biologi", "Bahasa_inggris"};
 	int banyak_mapel = sizeof(mapel)/sizeof(*mapel);
 	float banyak_data, jumlah_data[10], rata_siswa[10], rata_mapel[10];
 	char nama[10][10];
@@ -25,11 +25,13 @@ int main(){
 		cout << "Nama panggilan \t: " ; cin >> nama[i];
 		cout << "Fisika \t\t: " ; 		cin >> fisika[i];
 		cout << "Kimia \t\t: " ; 		cin >> kimia[i];
-		cout << "Matematika \t: " ; 	cin >> matematika[i];
-		cout << "Biologi \t: " ; 		cin >> biologi[i];		
+		cout << "Matematika \t: " ; 		cin >> matematika[i];
+		cout << "Biologi \t: " ; 		cin >> biologi[i];
+		cout << "Bahasa inggris \t: " ;		cin >> bahasa_inggris[i];
+			
 		cout << endl;
 	//Menghitung rata-rata nilai siswa
-	jumlah_data[i] = fisika[i] + kimia[i] + matematika[i] + biologi[i];
+	jumlah_data[i] = fisika[i] + kimia[i] + matematika[i] + biologi[i] + bahasa_inggris[i];
 	rata_siswa[i] = jumlah_data[i]/banyak_mapel;
 
 	
@@ -38,11 +40,13 @@ int main(){
 	total_kimia += kimia[i];
 	total_matematika += matematika[i];
 	total_biologi += biologi[i];
+	total_bahasainggris += bahasa_inggris[i];
 	
 	rata_mapel[0] = (total_fisika)/banyak_data;
 	rata_mapel[1] = (total_kimia)/banyak_data;
 	rata_mapel[2] = (total_matematika)/banyak_data;
 	rata_mapel[3] = (total_biologi)/banyak_data;
+	rata_mapel[4] = (total_bahasainggris)/banyak_data;
 }	
 	cout << endl;
 		
@@ -85,6 +89,7 @@ int main(){
 	cout << "Kimia \t\t: " << total_kimia << endl;
 	cout << "Matematika \t: " << total_matematika << endl;
 	cout << "Biologi \t: " << total_biologi << endl;
+	cout << "Bahasa Inggris \t: " << total_bahasainggris << endl;
 	
 	
 	//output rata rata mapel
