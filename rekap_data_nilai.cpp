@@ -99,10 +99,10 @@ int main(){
 
 	for(int i = 0; i < banyak_mapel; i++){
 		if(i == 2 || i == 4){
-			cout << mapel[i] << "\t: " << rata_mapel[i] << endl;
+			cout << mapel[i] << "\t: " << rata_mapel[i] << endl; //Untuk merapikan supaya matematika dan Bahasa Inggris rata dengan mapel lainnya
 		}
 		else {
-			cout << mapel[i] << "\t: " << rata_mapel[i] << endl;
+			cout << mapel[i] << "\t\t: " << rata_mapel[i] << endl; //Mapel selain matematika dan B.Ingg diberi 2 tab supaya rapi
 		}
 	}
 }
