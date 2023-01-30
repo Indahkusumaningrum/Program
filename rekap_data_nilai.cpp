@@ -28,12 +28,11 @@ int main(){
 		cout << "Matematika \t: " ; 		cin >> matematika[i];
 		cout << "Biologi \t: " ; 		cin >> biologi[i];
 		cout << "Bahasa inggris \t: " ;		cin >> bahasa_inggris[i];
-			
 		cout << endl;
+		
 	//Menghitung rata-rata nilai siswa
 	jumlah_data[i] = fisika[i] + kimia[i] + matematika[i] + biologi[i] + bahasa_inggris[i];
 	rata_siswa[i] = jumlah_data[i]/banyak_mapel;
-
 	
 	//Menghitung rata-rata mata pelajaran
 	total_fisika += fisika[i];
@@ -47,7 +46,7 @@ int main(){
 	rata_mapel[2] = (total_matematika)/banyak_data;
 	rata_mapel[3] = (total_biologi)/banyak_data;
 	rata_mapel[4] = (total_bahasainggris)/banyak_data;
-}	
+	}	
 	cout << endl;
 		
 	//output tabel 
@@ -61,9 +60,9 @@ int main(){
 	int no = i +1;
 	cout << setw(4) << no << setw(10) << nama[i]
 		 << setw(14) << fisika[i] << setw(15) << kimia[i]
-		 << setw(13) << matematika[i] << setw(16) << biologi[i] << setw(16) << bahasa_inggris[i] << endl;
+		 << setw(13) << matematika[i] << setw(16) << biologi[i] << setw(16) << bahasa_inggris[i] << endl;	
+	}
 	
-	}	
 	//output Total Nilai
 	cout << "\n\n----------------------------\n";
 	cout << "Total Nilai Tiap Mahasiswa" << endl;
@@ -90,8 +89,7 @@ int main(){
 	cout << "Matematika \t: " << total_matematika << endl;
 	cout << "Biologi \t: " << total_biologi << endl;
 	cout << "Bahasa Inggris \t: " << total_bahasainggris << endl;
-	
-	
+		
 	//output rata rata mapel
 	cout << "\n\n----------------------------\n";
 	cout << "Rata-Rata Mata Kuliah" << endl;
