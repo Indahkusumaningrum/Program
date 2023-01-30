@@ -3,7 +3,7 @@
 
 
 #include <iostream>
-include <ctime>
+#include <ctime>
 using namespace std;
 
 
@@ -16,6 +16,9 @@ int ie1, ie2, ie3, i1, i2, i3, e1, e2, e3, hasili, hasile;
 int sn1, sn2, sn3, s1, s2, s3, n1, n2, n3, hasils, hasiln;
 int tf1, tf2, tf3, t1, t2, t3, f1, f2, f3, hasilt, hasilf;
 int jp1, jp2, jp3, j1, j2, j3, p1, p2, p3, hasilj, hasilp;
+
+time_t now = time(0);
+string waktu = ctime(&now);
 
 void header (){
 	cout << "\n\n++++++++++++++++++++ TES MBTI SEDERHANA ++++++++++++++++++++ \n\n";
@@ -350,10 +353,14 @@ int main (){
 		
 		system("CLS");
 		cout << "\n\n";
-		cout << "++++++++++ HASIL MBTI ++++++++++ \n";
-		cout << "Nama \t : " << nama << endl;
-		cout << "Umur \t : " << umur << endl;
-		cout << "MBTI \t : " << karakterie << karaktersn << karaktertf <<karakterjp;
+		cout << "---------------------------\n";
+		cout << " 	HASIL MBTI \n";
+		cout << "---------------------------\n";
+		
+		cout << "Diakses Pada \t : " << waktu << endl;
+		cout << "Nama \t\t : " << nama << endl;
+		cout << "Umur \t\t : " << umur << endl;
+		cout << "MBTI \t\t : " << karakterie << karaktersn << karaktertf <<karakterjp;
 	}else {
 		system("CLS");
 		cout << "\tTERIMA KASIH TELAH MENGGUNAKAN PROPGRAM INI!";
