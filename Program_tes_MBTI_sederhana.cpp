@@ -1,58 +1,17 @@
 //Program ini dibuat oleh Indah Kusuma Ningrun
 //Pada November 2022
 
-
 #include <iostream>
 using namespace std;
 
-
-void header();
-void ie ();
-void sn();
-void tf();
-void jp();
-
 string nama;
 char umur[3];
-
 char karakterie, karaktersn, karaktertf, karakterjp;
 
 int ie1, ie2, ie3, i1, i2, i3, e1, e2, e3, hasili, hasile;
 int sn1, sn2, sn3, s1, s2, s3, n1, n2, n3, hasils, hasiln;
 int tf1, tf2, tf3, t1, t2, t3, f1, f2, f3, hasilt, hasilf;
 int jp1, jp2, jp3, j1, j2, j3, p1, p2, p3, hasilj, hasilp;
-
-int main (){
-
-	
-	header();
-	
-	cout << "\n \nMasukkan Identias Diri Anda \n \n";
-	cout << "Nama \t :";
-	getline (cin, nama);
-	cout << "Umur \t :";
-	cin >> umur;
-	system ("CLS");
-	
-	ie();
-	
-	sn();
-	
-	tf();
-	
-	jp();
-	
-	system("CLS");
-	
-	cout << "\n\n";
-	cout << "++++++++++ HASIL MBTI ++++++++++ \n";
-	cout << "Nama \t : " << nama << endl;
-	cout << "Umur \t : " << umur << endl;
-	cout << "MBTI \t : " << karakterie << karaktersn << karaktertf <<karakterjp;
-	
-	
-	return 0;
-}
 
 void header (){
 	cout << "\n\n++++++++++++++++++++ TES MBTI SEDERHANA ++++++++++++++++++++ \n\n";
@@ -358,3 +317,41 @@ void jp(){
 	}
 	
 }
+
+
+int main (){
+
+	
+	header();
+	
+	cout << "\n \nMasukkan Identias Diri Anda \n \n";
+	cout << "Nama \t :";
+	getline (cin, nama);
+	cout << "Umur \t :";
+	cin >> umur;
+	system ("CLS");
+	
+	ie();
+	
+	sn();
+	
+	tf();
+	
+	jp();
+	
+	system("CLS");
+	
+	cout << "\n\n";
+	cout << "++++++++++ HASIL MBTI ++++++++++ \n";
+	cout << "Nama \t : " << nama << endl;
+	cout << "Umur \t : " << umur << endl;
+	cout << "MBTI \t : " << karakterie << karaktersn << karaktertf <<karakterjp;
+	
+	
+	return 0;
+}
+
+
+
+
+
