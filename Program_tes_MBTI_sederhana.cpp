@@ -3,6 +3,7 @@
 
 
 #include <iostream>
+include <ctime>
 using namespace std;
 
 
@@ -341,13 +342,23 @@ int main (){
 	
 	jp();
 	
-	system("CLS");
+	cout << "\nApakah Anda ingin mencetak hasil tes? (y/n)";
+	char inputan;
+	cin >> inputan;
 	
-	cout << "\n\n";
-	cout << "++++++++++ HASIL MBTI ++++++++++ \n";
-	cout << "Nama \t : " << nama << endl;
-	cout << "Umur \t : " << umur << endl;
-	cout << "MBTI \t : " << karakterie << karaktersn << karaktertf <<karakterjp;
+	if(inputan == 'y' || inputan == 'Y'){
+		
+		system("CLS");
+		cout << "\n\n";
+		cout << "++++++++++ HASIL MBTI ++++++++++ \n";
+		cout << "Nama \t : " << nama << endl;
+		cout << "Umur \t : " << umur << endl;
+		cout << "MBTI \t : " << karakterie << karaktersn << karaktertf <<karakterjp;
+	}else {
+		system("CLS");
+		cout << "\tTERIMA KASIH TELAH MENGGUNAKAN PROPGRAM INI!";
+	}
+	
 		
 	return 0;
 }
