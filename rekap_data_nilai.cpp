@@ -98,6 +98,11 @@ int main(){
 	cout << "----------------------------\n";
 
 	for(int i = 0; i < banyak_mapel; i++){
-	cout << mapel[i] << "\t: " << rata_mapel[i] << endl;
+		if(i == 2 || i == 4){
+			cout << mapel[i] << "\t: " << rata_mapel[i] << endl;
+		}
+		else {
+			cout << mapel[i] << "\t: " << rata_mapel[i] << endl;
+		}
 	}
 }
