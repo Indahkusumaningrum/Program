@@ -1,11 +1,14 @@
-//Program ini dibuat oleh Indah Kusuma Ningrun
+//Program ini dibuat oleh Indah Kusuma Ningrum
 //Pada November 2022
+
 
 #include <iostream>
 using namespace std;
 
+
 string nama;
 char umur[3];
+
 char karakterie, karaktersn, karaktertf, karakterjp;
 
 int ie1, ie2, ie3, i1, i2, i3, e1, e2, e3, hasili, hasile;
@@ -32,7 +35,7 @@ cout << "\t 4. Judging (J) \t- Perceiving (P) \n\n";
 void ie (){
 	
 	ie:
-	cout << "Ketika telepon rumah berbunyi yang kamu pikirkan adalah : \n";
+	cout << "[1] Ketika telepon rumah berbunyi yang kamu pikirkan adalah : \n";
 	cout << "1. Berharap ada orang lain yang mengangkat telpon \n";
 	cout << "2. Segera mengangkat telpon tanpa berpikir \n\n";
 	cout << "Jawaban : "; cin >> ie1;
@@ -52,7 +55,7 @@ void ie (){
 	}
 	
 	
-	cout << "\n\nSaat mengambil keputusan biasanya kamu : \n";
+	cout << "\n\n[2] Saat mengambil keputusan biasanya kamu : \n";
 	cout << "1. Memberi penilaian yang kritis \n";
 	cout << "2. Membuat penilaian yang bijak \n";
 	cout << "Jawaban : "; cin >> ie2;
@@ -72,7 +75,7 @@ void ie (){
 	}
 	
 	
-	cout << "\n\nKamu adalah orang yang lebih suka \n";
+	cout << "\n\n[3] Kamu adalah orang yang lebih suka \n";
 	cout << "1. Praktik daripada teori \n";
 	cout << "2. Teori daripada praktik \n";
 	cout << "Jawaban : "; cin >> ie3;
@@ -105,7 +108,7 @@ void ie (){
 void sn(){
 	
 	sn:
-	cout <<"\n\nKamu lebih suka untuk : \n";
+	cout <<"\n\n[4] Kamu lebih suka untuk : \n";
 	cout <<"1. Melakukan uji coba langsung daripada berimajinasi \n";
 	cout <<"2. Berkhayal daripada melakukan uji coba langsung \n";
 	cout << "Jawaban : "; cin >> sn1;
@@ -125,7 +128,7 @@ void sn(){
 		goto sn;
 	}
 	
-	cout << "\n\nJika lingkungan kerjamu berantakan, kamu akan: \n";
+	cout << "\n\n[5] Jika lingkungan kerjamu berantakan, kamu akan: \n";
 	cout << "1. Menyempatkan waktu untuk merapihkannya \n";
 	cout << "2. Membiarkannya selama nyaman untuk bekerja \n";
 	cout << "Jawaban : "; cin >> sn2;
@@ -145,7 +148,7 @@ void sn(){
 		goto sn;
 	}
 	
-	cout << "\n\nSaat mendengar gosip, kamu lebih tertarik pada: \n";
+	cout << "\n\n[6] Saat mendengar gosip, kamu lebih tertarik pada: \n";
 	cout << "1. Apa yang sebenarnya terjadi \n";
 	cout << "2. Apa kemungkinan lain yang terjadi \n";
 	cout << "Jawaban : "; cin >> sn3;
@@ -180,7 +183,7 @@ void sn(){
 void tf(){
 	
 	tf:
-	cout <<"\n\nMana yang paling tidak kamu sukai: \n";
+	cout <<"\n\n[7] Mana yang paling tidak kamu sukai: \n";
 	cout <<"1. Ketika kamu banyak beban pikiran \n";
 	cout <<"2. Ketika kamu terjebak dalam rutinitas \n";
 	cout << "Jawaban : "; cin >> tf1;
@@ -199,7 +202,7 @@ void tf(){
 		goto tf;
 	}
 	
-	cout << "\n\nSaat hendak memilih sesuatu, kamu biasanya: \n";
+	cout << "\n\n[8] Saat hendak memilih sesuatu, kamu biasanya: \n";
 	cout << "1. Segera berpikir untuk memilih dengan cepat \n";
 	cout << "2. Butuh waktu lama untuk memilih-milih \n";
 	cout << "Jawaban : "; cin >> tf2;
@@ -218,7 +221,7 @@ void tf(){
 		goto tf;
 	}
 	
-	cout << "\n\nSaat mengambil keputusan, kamu sering mendasarkan pada: \n";
+	cout << "\n\n[9] Saat mengambil keputusan, kamu sering mendasarkan pada: \n";
 	cout << "1. Informasi dan data yang ada \n";
 	cout << "2. Selera dan insting yang kamu rasa \n";
 	cout << "Jawaban : "; cin >> tf3;
@@ -250,7 +253,7 @@ void tf(){
 
 void jp(){
 	jp:
-	cout << "\n\nKetika berhubungan dengan orang lain kamu cenderung :\n";
+	cout << "\n\n[10] Ketika berhubungan dengan orang lain kamu cenderung :\n";
 	cout << "1. Tegas daripada lembut \n";
 	cout << "2. Lembut daripada tegas \n";
 	cout << "Jawaban : "; cin >> jp1;
@@ -269,7 +272,7 @@ void jp(){
 		goto jp;
 	}
 	
-	cout << "\n\nSaat mengantre biasanya kamu: \n";
+	cout << "\n\n[11] Saat mengantre biasanya kamu: \n";
 	cout << "1. Mengajak orang lain yang mengantri untuk mengobrol \n";
 	cout << "2. Tetap diam dan fokus mengantri saja \n";
 	cout << "Jawaban : "; cin >> jp2;
@@ -288,7 +291,7 @@ void jp(){
 		goto jp;
 	}
 	
-	cout << "\n\nDalam menilai orang lain kamu cenderung untuk: \n";
+	cout << "\n\n[12] Dalam menilai orang lain kamu cenderung untuk: \n";
 	cout << "1. Bersikap objektif dan adil \n";
 	cout << "2. Bersikap ramah dan bersahabat \n";
 	cout << "Jawaban : "; cin >> jp3;
@@ -318,7 +321,6 @@ void jp(){
 	
 }
 
-
 int main (){
 
 	
@@ -346,12 +348,6 @@ int main (){
 	cout << "Nama \t : " << nama << endl;
 	cout << "Umur \t : " << umur << endl;
 	cout << "MBTI \t : " << karakterie << karaktersn << karaktertf <<karakterjp;
-	
-	
+		
 	return 0;
 }
-
-
-
-
-
