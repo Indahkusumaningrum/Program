@@ -1,3 +1,4 @@
+//Indah Kusuma Ningrum [31/01/2023, 22.23]
 #include <iostream>
 using namespace std;
 
@@ -48,8 +49,11 @@ cin >> ulang;
 system("CLS");
 
 	if(ulang == 'n' || ulang == 'N'){
-		
-	}cout << "\t\tTERIMA KASIH TELAH MENGGUNAKAN PROGRAM INI";
+		cout << "\t\tTERIMA KASIH TELAH MENGGUNAKAN PROGRAM INI";		
+	} else {
+		cout << "INPUTAN ANDA TIDAK SESUAI!!!";
+	}
+	
 } while (ulang == 'y' || ulang == 'Y');
 
 return 0;
