@@ -1,11 +1,11 @@
 //Indah Kusuma Ningrum [31/01/2023, 22.23]
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
 int angka[] = {4, 7, 9, 11, 4, 2, 5, 2, 8, 10};
 	int panjang = sizeof(angka)/sizeof(*angka);
-	int cari, hasil, banyak_data;
-	hasil = 0;
+	int cari, hasil = 0, banyak_data;
 	char ulang;
 
 void program (){
@@ -44,7 +44,7 @@ int main(){
 
 	program();
 	
-	
+ulang:	
 cout << "\n\nApakah anda ingin melakukan searching lagi? (y/n)\n";
 cin >> ulang;
 
@@ -55,7 +55,10 @@ system("CLS");
 	}else if(ulang == 'n' || ulang == 'N'){
 		cout << "\t\tTERIMA KASIH TELAH MENGGUNAKAN PROGRAM INI";		
 	} else {
-		cout << "INPUTAN ANDA TIDAK SESUAI!!!";
+		cout << "INPUTAN ANDA TIDAK SESUAI!!!\n";
+		cout << "Tekan Enter untuk menjawab ulang";
+		_getch();
+		goto ulang;
 	}
 
 return 0;
