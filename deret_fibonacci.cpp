@@ -18,7 +18,7 @@ void program(){
 	cout << "Masukkan nilai n (banyaknya deret) : ";
 	cin >> n;
 	
-	cout << "\n\n====================================\n";
+	cout << "\n\n==============================================\n";
 	cout << "DERET FIBONACCI : ";
 	
 	
@@ -42,7 +42,7 @@ void program(){
 		cout << fibo_n << " ";		
 	}
 	
-	cout << "\n====================================\n";
+	cout << "\n==============================================\n";
 	
 }
 
@@ -56,6 +56,7 @@ void footer(){
 
 int main(){
 	char ulang;
+	int jumlah_ulang = 2;
 	
 	header();
 	program();
@@ -67,8 +68,13 @@ int main(){
 	
 		if(ulang == 'Y' || ulang == 'y'){
 			system("CLS");
+				cout << "------------------\n";
+				cout << "CHAPTER : " << jumlah_ulang << endl;
+				cout << "------------------\n\n\n";
 			
 			program();
+			jumlah_ulang++;
+			
 		} else if (ulang == 'N' || ulang == 'n'){
 			system("CLS");
 			footer();
