@@ -46,11 +46,35 @@ void program(){
 	
 }
 
+void footer(){
+	
+	cout << "\t\t -------------------------------------------------------\n";
+	cout << "\t\t|	TERIMA KASIH TELAH MENGGUNAKAN PROGRAM INI	|\n";
+	cout << "\t\t -------------------------------------------------------\n\n";
+	
+}
+
 int main(){
+	char ulang;
 	
 	header();
 	program();
 	
+	do{
+	
+	cout << "\n\nULANGI PROGRAM? (Y/N) : ";
+	cin >> ulang;
+	
+		if(ulang == 'Y' || ulang == 'y'){
+			system("CLS");
+			
+			program();
+		} else if (ulang == 'N' || ulang == 'n'){
+			system("CLS");
+			footer();
+		}
+	} while (ulang == 'Y' || ulang == 'y');
+
 	cin.get();
 	return 0;
 }
