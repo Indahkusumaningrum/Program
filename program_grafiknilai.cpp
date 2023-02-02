@@ -1,14 +1,23 @@
+//Updated on [02/02/2023, 14.38]
 #include <iostream>
+#include <stdio.h>
 #define n 11
 using namespace std;
 int main() {
     int nilai_mhs[n];
-    string matakuliah, jurusan;
-    char tahun[4];
-    cout << "NAMA MATA KULIAH\t: "; getline(cin, matakuliah);
-    cout << "NAMA JURUSAN\t\t: "; getline(cin, jurusan);
-    cout << "TAHUN\t\t\t: "; cin >> tahun; cout << endl << endl;
-    cout << "MASUKKAN DATA JUMLAH MAHASISWA BERDASARKAN INTERVAL NILAI BERIKUT\n";
+    char tahun[5], jurusan[50], matakuliah[100];
+    
+	printf ("NAMA MATA KULIAH \t: ");
+	gets (matakuliah);
+	printf ("TAHUN \t\t\t: ");
+	gets (tahun);
+	printf ("JURUSAN \t\t: ");
+	gets (jurusan);
+    
+    cout << "\n\n\t\t-----------------------------------------------------------------------------\n";
+    cout << "\t\t\tMASUKKAN DATA JUMLAH MAHASISWA BERDASARKAN INTERVAL NILAI BERIKUT\n";
+    cout << "\t\t-----------------------------------------------------------------------------\n\n";
+ 
     
     for (int i = 0; i < n ; i++){
        cout << "Jumlah mahasiswa dengan nilai " ;
@@ -27,9 +36,9 @@ int main() {
        }
       cout << endl;
     }
-        cout << "\t_____________________________________________________________________________________________________________\n";
-        cout << "\t\tMENAMPILKAN GRAFIK PERSEBARAN NILAI MAHASIWA S1 ILMU KOMPUTER 2022 MATA KULIAH DDP\n";
-        cout << "\t_____________________________________________________________________________________________________________\n\n";
+        cout << "_____________________________________________________________________________________________________________\n";
+        cout << "\tMENAMPILKAN GRAFIK PERSEBARAN NILAI MAHASIWA " << jurusan << " " << tahun << " MATA KULIAH " << matakuliah << endl;
+        cout << "_____________________________________________________________________________________________________________\n\n";
 
     
     for(int i = 0; i < n ; i++){
@@ -55,5 +64,6 @@ int main() {
     }   
         cout << "\t|"; cout << "________________________________________";
 
+		cin.get();
         return 0;
 }
