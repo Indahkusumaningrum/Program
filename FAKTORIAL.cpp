@@ -2,23 +2,21 @@
 #include <iostream>
 using namespace std;
 
-int bilangan, i, hasil = 1;
-void opening();
+int bilangan, hasil = 1;
     
-void opening(){
-	cout << "------------PROGRAM FAKTORIALISASI BILANGAN------------\n\n";
+void header(){
+	cout << "\t\t\t\t------------PROGRAM FAKTORIALISASI BILANGAN------------\n\n";
 	
 }
 
 int main(){
-	opening();
+	header();
     
     cout << "Masukkan bilangan : ";
     cin >> bilangan;
     cout << bilangan <<"! = ";
     
-    
-    for(i = bilangan; i >= 1; i--){
+    for(int i = bilangan; i >= 1; i--){
         hasil *= i;
        	
        	 if(i != bilangan){
