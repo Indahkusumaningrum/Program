@@ -20,7 +20,7 @@ int main (){
         cout << "Masukkan angka yang ingin diskip : ";
         cin >> x;
         for (int i = 1; i <= n; i++){
-            while(i == x){
+            if(i == x){
                 continue;
             }
             cout << i << "\n";
@@ -28,6 +28,14 @@ int main (){
         }
         
   } else if (pilihan == '2'){
+      cout << "Masukkan angka yang ingin distop : ";
+      cin >> x;
+      for(int i = 1; i <= n; i++){
+          if(i == x + 1){
+              break;
+          }
+          cout << i << "\n";
+      }
     
   } else {
       cout << "INPUTAN LU SALAH CUYY!!!";
